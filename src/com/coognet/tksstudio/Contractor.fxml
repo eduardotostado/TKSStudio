@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.ContractorController">
+   <children>
+      <Label layoutX="194.0" layoutY="14.0" text="Contractors">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="501.0" layoutY="559.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="contractorTableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="contractorFirstNameColumn" prefWidth="149.0" text="First Name" />
+          <TableColumn fx:id="contractorLastNameColumn" prefWidth="149.0" text="Last Name" />
+          <TableColumn fx:id="contractorSalaryColumn" prefWidth="150.0" text="Salary" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="34.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="138.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="252.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="77.0" layoutY="390.0" prefHeight="17.0" prefWidth="85.0" text="First Name" />
+      <Label layoutX="77.0" layoutY="442.0" prefHeight="17.0" prefWidth="101.0" text="Last Name" />
+      <Label layoutX="102.0" layoutY="489.0" prefHeight="17.0" prefWidth="107.0" text="Salary" />
+      <TextField fx:id="lastNameTextField" layoutX="165.0" layoutY="437.0" />
+      <TextField fx:id="salaryTextField" layoutX="165.0" layoutY="484.0" />
+      <TextField fx:id="firstNameTextfield" layoutX="165.0" layoutY="385.0" />
+      <JFXButton layoutX="396.0" layoutY="517.0" onAction="#contractorPurchaseOrderPushed" style="-fx-background-color: #ababab;" text="Contractor Purchase Orders" />
+      <JFXButton layoutX="396.0" layoutY="476.0" onAction="#contractorOrderLinePushed" prefHeight="27.0" prefWidth="191.0" style="-fx-background-color: #ababab;" text="Contractor Order Lines" />
+   </children>
+</AnchorPane>

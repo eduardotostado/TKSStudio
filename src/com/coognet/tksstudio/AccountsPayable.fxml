@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="578.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.AccountsPayableController">
+   <children>
+      <Label layoutX="123.0" layoutY="14.0" text="Accounts Payable">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="353.0" layoutY="364.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="accountsPayableTableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="accountNameColumn" prefWidth="150.0" text="Account" />
+          <TableColumn fx:id="balanceColumn" prefWidth="149.0" text="Balance" />
+          <TableColumn fx:id="dueDateColumn" prefWidth="150.0" text="Due Date" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="131.0" layoutY="539.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="235.0" layoutY="539.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="349.0" layoutY="539.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="133.0" layoutY="417.0" prefHeight="17.0" prefWidth="85.0" text="Account" />
+      <Label layoutX="131.0" layoutY="457.0" prefHeight="17.0" prefWidth="85.0" text="Balance" />
+      <Label layoutX="131.0" layoutY="494.0" prefHeight="17.0" prefWidth="85.0" text="Due Date" />
+      <TextField fx:id="balanceTextField" layoutX="221.0" layoutY="452.0" />
+      <TextField fx:id="dueDateTextField" layoutX="221.0" layoutY="489.0" />
+      <ComboBox fx:id="accountComboBox" layoutX="221.0" layoutY="412.0" prefHeight="27.0" prefWidth="167.0" />
+      <JFXButton layoutX="80.0" layoutY="363.0" onAction="#backPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.ContractorPurchaseOrderController">
+   <children>
+      <Label layoutX="65.0" layoutY="14.0" text="Contractor Purchase Order">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="501.0" layoutY="553.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="contractorPurchaseOrderTableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="cPOIDColumn" prefWidth="90.0" text="ID" />
+            <TableColumn fx:id="contIDColumn" prefWidth="90.0" text="Contractor ID" />
+          <TableColumn fx:id="apIDColumn" prefWidth="90.0" text="AP ID" />
+          <TableColumn fx:id="cPOTotalColumn" prefWidth="90.0" text="Total" />
+            <TableColumn fx:id="cPODateColumn" prefWidth="90.0" text="Date" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="34.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="138.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="252.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="61.0" layoutY="390.0" prefHeight="17.0" prefWidth="117.0" text="Contractor ID" />
+      <Label layoutX="27.0" layoutY="443.0" prefHeight="17.0" prefWidth="125.0" text="Account Payable ID" />
+      <Label layoutX="355.0" layoutY="390.0" prefHeight="17.0" prefWidth="107.0" text="Total" />
+      <TextField fx:id="apIDTextField" layoutX="163.0" layoutY="438.0" />
+      <TextField fx:id="totalTextField" layoutX="419.0" layoutY="385.0" />
+      <TextField fx:id="cIDTextField" layoutX="165.0" layoutY="385.0" />
+      <Label layoutX="355.0" layoutY="443.0" prefHeight="17.0" prefWidth="107.0" text="Date" />
+      <TextField fx:id="dateTextField" layoutX="419.0" layoutY="438.0" />
+      <JFXButton layoutX="501.0" layoutY="518.0" onAction="#backPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Back" />
+   </children>
+</AnchorPane>

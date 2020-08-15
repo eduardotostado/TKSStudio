@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.StatusController">
+   <children>
+      <Label layoutX="210.0" layoutY="14.0" text="Status">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="338.0" layoutY="369.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="column1" prefWidth="76.0" text="ID" />
+            <TableColumn fx:id="column2" prefWidth="374.0" text="Name" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="116.0" layoutY="484.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="220.0" layoutY="484.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="334.0" layoutY="484.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="107.0" layoutY="431.0" prefHeight="17.0" prefWidth="117.0" text="Name" />
+      <TextField fx:id="textfield1" layoutX="193.0" layoutY="426.0" />
+       <JFXButton layoutX="93.0" layoutY="368.0" onAction="#backPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Back" />
+
+   </children>
+</AnchorPane>

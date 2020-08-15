@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.SiteSurveyController">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="Site Survey">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="341.0" layoutY="373.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="column1" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="column2" prefWidth="96.0" text="Job Proposal ID" />
+          <TableColumn fx:id="column3" prefWidth="95.0" text="Date" />
+          <TableColumn fx:id="column4" prefWidth="169.0" text="Notes" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="116.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="220.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="334.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="91.0" layoutY="416.0" prefHeight="17.0" prefWidth="117.0" text="Job Proposal ID" />
+      <Label layoutX="153.0" layoutY="468.0" prefHeight="17.0" prefWidth="117.0" text="Date" />
+      <Label layoutX="147.0" layoutY="515.0" prefHeight="17.0" prefWidth="107.0" text="Notes" />
+      <TextField fx:id="textfield2" layoutX="211.0" layoutY="463.0" />
+      <TextField fx:id="textfield3" layoutX="211.0" layoutY="510.0" />
+      <TextField fx:id="textfield1" layoutX="211.0" layoutY="411.0" />
+       <JFXButton layoutX="87.0" layoutY="372.0" onAction="#backPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Back" />
+
+   </children>
+</AnchorPane>

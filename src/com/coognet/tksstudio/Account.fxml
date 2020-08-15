@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.AccountController">
+   <children>
+      <Label layoutX="179.0" layoutY="14.0" text="Accounts">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="337.0" layoutY="370.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="accountTableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="departmentNameColumn" prefWidth="150.0" text="Department" />
+          <TableColumn fx:id="accountNameColumn" prefWidth="149.0" text="Name" />
+          <TableColumn fx:id="accountTypeColumn" prefWidth="150.0" text="Type" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="100.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="220.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="337.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="77.0" layoutY="418.0" prefHeight="17.0" prefWidth="85.0" text="Department:" />
+      <Label layoutX="117.0" layoutY="470.0" prefHeight="17.0" prefWidth="43.0" text="Name:" />
+      <Label layoutX="117.0" layoutY="517.0" prefHeight="17.0" prefWidth="43.0" text="Type:" />
+      <TextField fx:id="nameTextField" layoutX="165.0" layoutY="465.0" />
+      <TextField fx:id="typeTextField" layoutX="165.0" layoutY="512.0" />
+      <ComboBox fx:id="departmentComboBox" layoutX="165.0" layoutY="413.0" prefHeight="27.0" prefWidth="167.0" />
+      <JFXButton layoutX="84.0" layoutY="370.0" onAction="#accountsPayablePushed" style="-fx-background-color: #ababab;" text="Accounts Payable" />
+   </children>
+</AnchorPane>

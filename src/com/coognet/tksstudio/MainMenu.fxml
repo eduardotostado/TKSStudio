@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="355.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.MainMenuController">
+   <children>
+      <JFXButton layoutX="133.0" layoutY="128.0" onAction="#accountingButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Accounts" />
+      <JFXButton layoutX="390.0" layoutY="128.0" onAction="#contractorsButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Contractors" />
+      <JFXButton layoutX="393.0" layoutY="205.0" onAction="#customersButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Customers" />
+      <JFXButton layoutX="133.0" layoutY="205.0" onAction="#departmentsButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Departments" />
+      <JFXButton layoutX="133.0" layoutY="278.0" onAction="#employeesButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Employees" />
+      <JFXButton layoutX="393.0" layoutY="278.0" onAction="#jobsButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ababab #ababab;" text="Jobs" />
+      <Label layoutX="207.0" layoutY="26.0" text="Main Menu">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="18.0" text="Welcome, admin!" />
+      <Label fx:id="dateLabel" layoutX="32.0" layoutY="18.0" prefHeight="17.0" prefWidth="172.0" text="date" />
+   </children>
+</AnchorPane>

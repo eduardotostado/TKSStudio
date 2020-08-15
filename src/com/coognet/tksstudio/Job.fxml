@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.JobController">
+   <children>
+      <Label layoutX="263.0" layoutY="14.0" text="Job">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="399.0" layoutY="553.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="column1" prefWidth="112.0" text="ID" />
+            <TableColumn fx:id="column2" prefWidth="122.0" text="Proposal ID" />
+          <TableColumn fx:id="column3" prefWidth="119.0" text="Project ID" />
+          <TableColumn fx:id="column4" prefWidth="96.0" text="Name" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="34.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="138.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="252.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="64.0" layoutY="390.0" prefHeight="17.0" prefWidth="117.0" text="Proposal ID" />
+      <Label layoutX="77.0" layoutY="442.0" prefHeight="17.0" prefWidth="117.0" text="Project ID" />
+      <Label layoutX="101.0" layoutY="489.0" prefHeight="17.0" prefWidth="107.0" text="Name" />
+      <TextField fx:id="textfield2" layoutX="165.0" layoutY="437.0" />
+      <TextField fx:id="textfield3" layoutX="165.0" layoutY="484.0" />
+      <TextField fx:id="textfield1" layoutX="165.0" layoutY="385.0" />
+      <JFXButton layoutX="598.0" layoutY="68.0" onAction="#jobMaterialPushed" style="-fx-background-color: #ababab;" text="Job Material" />
+      <JFXButton layoutX="601.0" layoutY="102.0" onAction="#materialPushed" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #ababab;" text="Material" />
+      <JFXButton layoutX="578.0" layoutY="137.0" onAction="#materialSourcePushed" style="-fx-background-color: #ababab;" text="Material Source" />
+      <JFXButton layoutX="585.0" layoutY="170.0" onAction="#materialTypePushed" style="-fx-background-color: #ababab;" text="Material Type" />
+      <JFXButton layoutX="595.0" layoutY="203.0" onAction="#jobProposalPushed" style="-fx-background-color: #ababab;" text="Job Proposal" />
+      <JFXButton layoutX="601.0" layoutY="237.0" onAction="#problemPushed" style="-fx-background-color: #ababab;" text="Problem" />
+      <JFXButton layoutX="552.0" layoutY="273.0" onAction="#architecturalReviewPushed" style="-fx-background-color: #ababab;" text="Architectural Review" />
+      <JFXButton layoutX="572.0" layoutY="306.0" onAction="#reviewStatusPushed" style="-fx-background-color: #ababab;" text="Review Status" />
+      <JFXButton layoutX="601.0" layoutY="344.0" onAction="#reviewTypePushed" style="-fx-background-color: #ababab;" text="Review Type" />
+      <JFXButton layoutX="601.0" layoutY="378.0" onAction="#siteSurveyPushed" style="-fx-background-color: #ababab;" text="Site Survey" />
+      <JFXButton layoutX="582.0" layoutY="412.0" onAction="#surveyPicturePushed" style="-fx-background-color: #ababab;" text="Survey Picture" />
+      <JFXButton layoutX="601.0" layoutY="445.0" onAction="#taskPushed" style="-fx-background-color: #ababab;" text="Task" />
+      <JFXButton layoutX="601.0" layoutY="479.0" onAction="#taskProblemPushed" style="-fx-background-color: #ababab;" text="Task Problem" />
+      <JFXButton layoutX="601.0" layoutY="513.0" onAction="#statusPushed" style="-fx-background-color: #ababab;" text="Status" />
+      <JFXButton layoutX="601.0" layoutY="547.0" onAction="#supplierPushed" style="-fx-background-color: #ababab;" text="Supplier" />
+      <JFXButton layoutX="600.0" layoutY="36.0" onAction="#workOrderPushed" style="-fx-background-color: #ababab;" text="Work Order" />
+   </children>
+</AnchorPane>

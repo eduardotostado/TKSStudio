@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.CustomerController">
+   <children>
+      <Label layoutX="193.0" layoutY="14.0" text="Customer">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="371.0" layoutY="373.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="customerTableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="iDColumn" prefWidth="67.0" text="ID" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="129.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="112.0" text="Last Name" />
+          <TableColumn fx:id="addressColumn" prefWidth="141.0" text="Address" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="111.0" layoutY="552.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="215.0" layoutY="552.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="329.0" layoutY="552.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="142.0" layoutY="421.0" prefHeight="17.0" prefWidth="117.0" text="First Name" />
+      <Label layoutX="142.0" layoutY="473.0" prefHeight="17.0" prefWidth="117.0" text="Last Name" />
+      <Label layoutX="163.0" layoutY="520.0" prefHeight="17.0" prefWidth="107.0" text="Address" />
+      <TextField fx:id="lastNameTextField" layoutX="227.0" layoutY="468.0" />
+      <TextField fx:id="addressTextField" layoutX="227.0" layoutY="515.0" />
+      <TextField fx:id="firstNameTextField" layoutX="227.0" layoutY="416.0" />
+      <JFXButton layoutX="207.0" layoutY="372.0" onAction="#projectPushed" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: #ababab;" text="Project" />
+      <JFXButton layoutX="55.0" layoutY="373.0" onAction="#customerInvoicePushed" style="-fx-background-color: #ababab;" text="Customer Invoice" />
+   </children>
+</AnchorPane>

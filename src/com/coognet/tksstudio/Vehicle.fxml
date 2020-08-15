@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coognet.tksstudio.VehicleController">
+   <children>
+      <Label layoutX="188.0" layoutY="14.0" text="Vehicle">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="332.0" layoutY="378.0" onAction="#mainMenuPushed" style="-fx-background-color: #ababab;" text="Main Menu" />
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="68.0" prefHeight="283.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="column1" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="column2" prefWidth="59.0" text="Fleet ID" />
+          <TableColumn fx:id="column3" prefWidth="148.0" text="Make" />
+          <TableColumn fx:id="column4" prefWidth="116.0" text="Model" />
+            <TableColumn fx:id="column5" prefWidth="75.0" text="Color" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="61.0" layoutY="553.0" onAction="#addButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Add" />
+      <JFXButton layoutX="217.0" layoutY="553.0" onAction="#deleteButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Delete" />
+      <JFXButton layoutX="370.0" layoutY="553.0" onAction="#editButtonPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Edit" />
+      <Label layoutX="16.0" layoutY="444.0" prefHeight="17.0" prefWidth="53.0" text="Fleet ID" />
+      <Label layoutX="35.0" layoutY="496.0" prefHeight="17.0" prefWidth="38.0" text="Make" />
+      <Label layoutX="286.0" layoutY="496.0" prefHeight="17.0" prefWidth="38.0" text="Color" />
+      <TextField fx:id="textfield2" layoutX="96.0" layoutY="491.0" />
+      <TextField fx:id="textfield4" layoutX="338.0" layoutY="491.0" />
+      <TextField fx:id="textfield1" layoutX="96.0" layoutY="439.0" />
+      <Label layoutX="282.0" layoutY="444.0" prefHeight="17.0" prefWidth="46.0" text="Model" />
+      <TextField fx:id="textfield3" layoutX="338.0" layoutY="439.0" />
+      <JFXButton layoutX="96.0" layoutY="377.0" onAction="#backPushed" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #ababab;" text="Back" />
+   </children>
+</AnchorPane>
